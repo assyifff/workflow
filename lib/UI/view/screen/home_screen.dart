@@ -115,13 +115,15 @@ class _HomeScreenState extends State<HomeScreen> {
                       children: [
                         TextButton(
                           onPressed: () {
-                            setState(() {
-                              isSaladPressed = !isSaladPressed;
-                              isBreakfastPressed = false;
-                              isAppetizerPressed = false;
-                              isNoodlePressed = false;
-                              isLunchPressed = false;
-                            });
+                            setState(
+                              () {
+                                isSaladPressed = !isSaladPressed;
+                                isBreakfastPressed = false;
+                                isAppetizerPressed = false;
+                                isNoodlePressed = false;
+                                isLunchPressed = false;
+                              },
+                            );
                           },
                           style: ButtonStyle(
                             backgroundColor: MaterialStatePropertyAll(
